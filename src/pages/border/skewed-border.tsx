@@ -1,12 +1,12 @@
 import React from 'react'
-import './skewed-borders.scss'
+import './skewed-border.scss'
 
 export default () => {
   return (
     <div className="page-container">
       <h1 className="page-title">Skewed borders</h1>
       <div className="skewed-border-container">
-        <div className="box">
+        <div className="skewed-box">
           <div className="content">
             <h1>Heading 1</h1>
             <p>
@@ -15,7 +15,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <div className="box">
+        <div className="skewed-box">
           <div className="content">
             <h1>Heading 2</h1>
             <p>
@@ -24,7 +24,7 @@ export default () => {
             </p>
           </div>
         </div>
-        <div className="box">
+        <div className="skewed-box">
           <div className="content">
             <h1>Heading 3</h1>
             <p>

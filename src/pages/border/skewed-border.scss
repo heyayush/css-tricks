@@ -1,0 +1,56 @@
+.skewed-border-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  grid-gap: 0 40px;
+  z-index: 1;
+
+  & .skewed-box {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: #000;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      transform: skew(2deg, 2deg);
+      z-index: -1;
+    }
+
+    &:nth-child(1):before {
+      background: linear-gradient(315deg, #ff0057, #e64a19);
+    }
+    &:nth-child(2):before {
+      background: linear-gradient(315deg, #89ff00, #00bcd4);
+    }
+    &:nth-child(3):before {
+      background: linear-gradient(315deg, #e91e63, #5d02ff);
+    }
+
+    .content {
+      position: relative;
+      padding: 2.5rem;
+
+      & h1 {
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+      }
+
+      & p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+}
