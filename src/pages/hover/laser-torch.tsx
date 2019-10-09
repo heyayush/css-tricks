@@ -1,5 +1,6 @@
 import React from 'react'
 import './laser-torch.scss'
+import { Link } from 'gatsby'
 
 export default () => {
   const foo = (e: any) => {
@@ -14,7 +15,12 @@ export default () => {
   }
   return (
     <div className="page-container">
-      <h1 className="page-title">Laser Torch</h1>
+      <div className="page-header">
+        <Link to="/" className="link-home">
+          Back to Home
+        </Link>
+        <h1 className="page-title">Laser Torch</h1>
+      </div>
       <div className="laser-torch-container" onMouseMove={foo} onMouseLeave={doo}>
         <h3 className="is-size-3">Heading</h3>
         <p>

@@ -1,10 +1,12 @@
 .page-home {
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
 
   .list-categories {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1rem;
+
     h3 {
       color: var(--ocean-liner);
       font-size: 1.3rem;

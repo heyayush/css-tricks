@@ -7,9 +7,18 @@
   justify-items: center;
   padding-bottom: 2.5rem;
 
-  .page-title {
-    font-size: 2rem;
-    margin: 1rem;
+  .page-header {
+    margin-bottom: 1.5rem;
+    .link-home {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      margin: 1rem;
+    }
   }
 }
 

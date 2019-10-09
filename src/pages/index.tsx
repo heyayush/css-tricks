@@ -22,7 +22,9 @@ export default ({ data }: AllSitePageQueryI) => {
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Collection of cool CSS tricks</h1>
+      <div className="page-header">
+        <h1 className="page-title">Collection of cool CSS tricks</h1>
+      </div>
       <div className="page-home">
         <div className="list-categories">
           <h3>Browse by:</h3>

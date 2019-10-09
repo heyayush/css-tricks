@@ -1,10 +1,16 @@
 import React from 'react'
 import './skewed-border.scss'
+import { Link } from 'gatsby'
 
 export default () => {
   return (
     <div className="page-container skewed-border">
-      <h1 className="page-title">Skewed borders</h1>
+      <div className="page-header">
+        <Link to="/" className="link-home">
+          Back to Home
+        </Link>
+        <h1 className="page-title">Skewed borders</h1>
+      </div>
       <div className="skewed-border-container">
         <div className="skewed-box">
           <div className="content">
