@@ -4,7 +4,7 @@ import './home.scss'
 import { graphql } from 'gatsby'
 
 export default ({ data }: AllSitePageQueryI) => {
-  const ignorePages = ['/dev-404-page/', '/']
+  const ignorePages = ['/dev-404-page/', '/', '/offline-plugin-app-shell-fallback/']
   const paths = data.allSitePage.edges.map(edge => edge.node.path)
   const allPages = paths.filter(path => !ignorePages.includes(path))
   const allFolders = new Set(allPages.map(item => item.split('/')[1]))
