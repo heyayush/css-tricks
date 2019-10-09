@@ -3,7 +3,7 @@ import './skewed-border.scss'
 
 export default () => {
   return (
-    <div className="page-container">
+    <div className="page-container skewed-border">
       <h1 className="page-title">Skewed borders</h1>
       <div className="skewed-border-container">
         <div className="skewed-box">

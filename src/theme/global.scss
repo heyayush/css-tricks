@@ -1,5 +1,7 @@
 .page-container {
   min-height: 100vh;
+  background: var(--moonseed);
+  color: var(--text-dark);
   display: grid;
   grid-template-rows: min-content 1fr;
   justify-items: center;
@@ -13,4 +15,8 @@
 
 li {
   list-style-position: inside;
+}
+
+a {
+  font-weight: 500;
 }

@@ -1,9 +1,21 @@
-$primary: #f0810f;
-$info: #f1f3ce;
+$primary: #03525b;
+$info: #368fa4;
 $warning: #fad710;
 $danger: #f10924;
 $success: #75cf26;
+$link: #738ceb;
+$light: #e8e6e6;
+$text: #368fa4;
 $dark: #363237;
+$border: #368fa4;
+$border-hover: #9dcfe7;
+$background: #9dcfe7;
+$tabs-link-color: #368fa4;
+$tabs-link-hover-border-bottom-color: #368fa4;
+$tabs-link-active-border-bottom-color: #03525b;
+$tabs-link-active-color: #03525b;
+$tabs-toggle-link-active-background-color: #368fa4;
+$tabs-toggle-link-active-border-color: #368fa4;
 
 // @import '../../node_modules/bulma/bulma.sass';
 @import '../../node_modules/bulma/sass/utilities/_all.sass';

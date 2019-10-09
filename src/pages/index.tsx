@@ -26,7 +26,7 @@ export default ({ data }: AllSitePageQueryI) => {
       <div className="page-home">
         <div className="list-categories">
           <h3>Browse by:</h3>
-          <div className="tabs">
+          <div className="tabs is-toggle">
             <ul>{listCategories}</ul>
           </div>
         </div>
