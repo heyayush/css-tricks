@@ -6,8 +6,12 @@
 
 ## Border
 
-- [Skewed Border Box](https://css-tricks.netlify.com/border/skewed-border/)
+- [Skewed Border Box](https://css-tricks.netlify.com/border/Skewed-border/)
 
 ## Hover
 
-- [Laser Torch Effect](https://css-tricks.netlify.com/hover/laser-torch/)
+- [Laser Torch Effect](https://css-tricks.netlify.com/hover/Laser-torch/)
+
+## Layouts
+
+- [Laser Torch Effect](https://css-tricks.netlify.com/layouts/Masonry/)
