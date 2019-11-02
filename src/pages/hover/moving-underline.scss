@@ -1,0 +1,44 @@
+.moving-underline-container {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+
+    li {
+      padding: 6px 0;
+
+      a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #336b87;
+        padding: 4px 0;
+        transition: 0.5s;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 3px;
+          top: 100%;
+          left: 0;
+          background: #03525b;
+          transition: transform 0.5s;
+          transform: scaleX(0);
+          transform-origin: right;
+        }
+
+        &:hover {
+          color: #f0810f;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
