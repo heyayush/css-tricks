@@ -1,11 +1,10 @@
 import React from 'react'
 import './moving-underline.scss'
-import PageHead from '../../components/page-head'
+import CenterHead from '../../templates/Center-head'
 
 export default () => {
   return (
-    <div className="page-container">
-      <PageHead>Moving Underline</PageHead>
+    <CenterHead title="Moving Underline">
       <div className="moving-underline-container">
         <ul>
           <li>
@@ -25,6 +24,6 @@ export default () => {
           </li>
         </ul>
       </div>
-    </div>
+    </CenterHead>
   )
 }

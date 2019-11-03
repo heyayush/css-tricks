@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import './home.scss'
 import { graphql } from 'gatsby'
+import Head from '../components/head'
+import Icon from '../components/icon/icon'
+import ICONS from '../constants/icons'
 
 export default ({ data }: AllSitePageQueryI) => {
   const ignorePages = ['/dev-404-page/', '/', '/offline-plugin-app-shell-fallback/']
@@ -21,22 +24,33 @@ export default ({ data }: AllSitePageQueryI) => {
   ))
 
   return (
-    <div className="page-container">
-      <div className="page-header">
-        <h1 className="page-title">Collection of cool CSS tricks</h1>
-      </div>
-      <div className="page-home">
-        <div className="list-categories">
-          <h3>Browse by:</h3>
-          <div className="tabs is-toggle">
-            <ul>{listCategories}</ul>
+    <React.Fragment>
+      <Head></Head>
+      <div className="page-container">
+        <div className="page-header">
+          <h1 className="page-title">Collection of cool CSS tricks</h1>
+          <a
+            href="https://github.com/heyayush/css-tricks"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="link-github"
+          >
+            <Icon icon={ICONS.GITHUB} />
+          </a>
+        </div>
+        <div className="page-home">
+          <div className="list-categories">
+            <h3>Browse by:</h3>
+            <div className="tabs is-toggle">
+              <ul>{listCategories}</ul>
+            </div>
+          </div>
+          <div className="list-category-items">
+            <ListCatItems active={activeCat} all={allPages}></ListCatItems>
           </div>
         </div>
-        <div className="list-category-items">
-          <ListCatItems active={activeCat} all={allPages}></ListCatItems>
-        </div>
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

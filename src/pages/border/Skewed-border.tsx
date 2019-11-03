@@ -1,11 +1,10 @@
 import React from 'react'
 import './skewed-border.scss'
-import PageHead from '../../components/page-head'
+import CenterHead from '../../templates/Center-head'
 
 export default () => {
   return (
-    <div className="page-container skewed-border">
-      <PageHead>Skewed borders</PageHead>
+    <CenterHead title="Skewed borders">
       <div className="skewed-border-container">
         <div className="skewed-box">
           <div className="content">
@@ -35,6 +34,6 @@ export default () => {
           </div>
         </div>
       </div>
-    </div>
+    </CenterHead>
   )
 }

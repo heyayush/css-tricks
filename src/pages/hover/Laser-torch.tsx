@@ -1,6 +1,6 @@
 import React from 'react'
 import './laser-torch.scss'
-import PageHead from '../../components/page-head'
+import CenterHead from '../../templates/Center-head'
 
 export default () => {
   const foo = (e: any) => {
@@ -14,16 +14,15 @@ export default () => {
     e.currentTarget.style.setProperty('--y', `-500px`)
   }
   return (
-    <div className="page-container">
-      <PageHead>Laser Torch</PageHead>
+    <CenterHead title="Laser Torch">
       <div className="laser-torch-container" onMouseMove={foo} onMouseLeave={doo}>
-        <h3 className="is-size-3">Heading</h3>
+        <h3 className="is-size-3">Hover here</h3>
         <p>
           Lorem ipsum isd asdj aker kjdod klkda mnci sdejknw dflijewmkn sdfij sdfkj lkje bnasda meoi alknv asolijf
           lknsas loijaewr lkndf asdio welnr joapo knerw lkner knasdf oijerto knjdfao dfuiookj kojsdfi nwejro noaidsf
           njiewr nsdjfoadin ihjerwe
         </p>
       </div>
-    </div>
+    </CenterHead>
   )
 }
