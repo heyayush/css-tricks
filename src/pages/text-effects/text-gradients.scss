@@ -4,11 +4,13 @@
   h2 {
     background: linear-gradient(to right, #ff8a00, #e52e71);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
   }
   p {
     background: linear-gradient(to bottom, #141100, #e36efa);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
   }
 }
