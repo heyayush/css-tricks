@@ -8,7 +8,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: ' CSS Tricks collection',
+    title: ' CSS Tricks Collection',
     description: 'Collection of cool CSS tricks to apply in our projects.',
     author: 'Ayush Sharma',
     favicon: '/ico/photo2.png',
